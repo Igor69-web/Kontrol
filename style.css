@@ -3,6 +3,12 @@ body {
     width: 1300px;
 }
 
+.h1{
+    position: relative;
+    left: 40px;
+    color: aqua;
+}
+
 .mini_menu {
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
