@@ -1,4 +1,212 @@
 body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #272729;
+    
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+}
+.mini_menu {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    padding: 25px 15px 0 0;
+    position: sticky;
+    border-right: 1px solid #272727;
+    max-height: 100vh;
+    top: 66px;
+}
+
+li {
+list-style-type: none; 
+}
+
+.navigatsiya {
+width: 30%;
+}
+
+
+.mini_menu nav {
+    position: sticky;
+    top: 85px;
+}
+
+.mini_menu nav ul li a {
+    display: block;
+    color: #cec8c8;
+    font-weight: 500;
+    padding: 10px 15px 10px 0;
+    margin-bottom: 2px;
+    border-radius: 4px;
+    line-height: 1;
+    transition: 0.2s;
+    text-decoration: none;
+}
+.mini_menu nav ul li a.active:not(:hover),
+.mini_menu nav ul li a:hover{
+    background: #232323;
+    padding: 10px 11px 10px 15px;
+}
+
+.mini_menu nav ul li ul{
+    display: none;
+}
+
+.mini_menu nav ul li a span{
+    padding-left: 0 !important;
+}
+
+.icon-fg {
+    display: inline-block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: 10;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.mini_menu nav ul li a:hover .icon-bg{
+    -webkit-filter: blur(1px);
+    filter: blur(1px);
+}
+
+.social_menu {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    padding: 15px 0;
+}
+
+.social_menu li{
+    margin-right:8px;
+}
+
+.social_menu li a{
+    display:block;
+    background:#404040;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    text-align:center;
+    font-size: 19px;
+    color:#717171;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.social_menu li a:hover{
+    color:#fff;
+}
+
+.social_menu li img{
+    height: 26px;
+}
+
+.car-gallery {
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.car {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.car img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 3px dashed black;
+}
+
+.car-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.2rem;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 20px;
+}
+
+.car:hover .car-overlay {
+    opacity: 1;
+    transition: width 0.5s; /* Добавляем плавную анимацию изменения ширины */
+    transition: background 0.5s ease;
+}
+
+.car-overlay h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.car-overlay p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: white;
+    border: none;
+    color: black;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+#contact-window {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+#contact-window h2 {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+body {
     background: #272729;
     width: 1300px;
 }
