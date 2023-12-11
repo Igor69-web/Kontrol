@@ -46,4 +46,7 @@ window.addEventListener("load", function() {
             });
         })(i);
     }
+$(".box") .click (function () {
+    $ (".box") .removeClass ("active");
+    $ (this) .addClass ("active");
 });
